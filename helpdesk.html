@@ -14,32 +14,35 @@
 
     <H1>CWA Help Desk Appointment</H1>
 
-    <p><H4>The Help Desk is located in ATC620 Open 10:30 to 19:00 Monday to Friday</H4>
-    </p>
+    <p>
+        <H4>The Help Desk is located in ATC620 Open 10:30 to 19:00 Monday to Friday</H4>
+        <H4>Check Blackboard for when CWA tutors will be there</H4>
+        </p>
 
-    <p><H4>Check Blackboard for when CWA tutors will be there</H4>
-    </p>
-
-    <form method="post" action="/action_page.php">
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset>
         <legend>Student Details</legend>
 
-            <p> <label for="StudentID">Student ID</label> 
+            <p> 
+                <label for="StudentID">Student ID</label> 
 			    <input type="text" name= "StudentID" id="SID" pattern="[0-9]{7,10}" size="10" required="required"/>
-            </p>
+                </p>
 
-            <p> <label for="Given Name">Given Name</label> <input type="text" name= "Given Name" id="GName" pattern="[A-Z]{15}" size="15" required="required"/> <label for="Family name">Family Name</label> <input type="text" name= "Family Name" id="FamName" pattern="[A-Z]{15}" size="15" required="required"/>
-            </p>
+            <p> 
+                <label for="Given Name">Given Name</label> <input type="text" name= "Given Name" id="GName" pattern="[A-Za-z]{0,15}" size="15"/> <label for="Family name">Family Name</label> <input type="text" name= "Family Name" id="FamName" pattern="[A-Za-z]{0,15}" size="15" required="required"/>
+                </p>
 
         </fieldset>
 
         <fieldset>
         <legend>Your Unit</legend> <!-- These inputs have the same name so that the singular requirement means any 1 is required -->
-            <p><input type="radio" id="COS10011" name="CLASS" value="COS10011" required="required"> <label for="html">COS10011</label> <input type="radio" id="COS60004" name="CLASS" value="COS60004"> <label for="html">COS60004</label> <input type="radio" id="COS60007" name="CLASS" value="COS60007"> <label for="html">COS60007</label>
+            <p>
+                <input type="radio" id="COS10011" name="CLASS" value="COS10011" required="required"> <label for="html">COS10011</label> <input type="radio" id="COS60004" name="CLASS" value="COS60004"> <label for="html">COS60004</label> <input type="radio" id="COS60007" name="CLASS" value="COS60007"> <label for="html">COS60007</label>
             </p>
 
-            <p> <label for="your Tutor">Your Tutor:</label>
-                <select id="your Tutor" name="your Tutor" required="required">
+            <p> 
+                <label for="your Tutor">Your Tutor:</label>
+                <select id="yourTutor" name="your Tutor" required="required">
                   <option value="">Please Select</option>
                   <option value="Nick">Enrique Nicolás Ketterer</option>
                   <option value="Rahul ">Rahul Raghavan</option>
@@ -51,7 +54,7 @@
         <fieldset>
         <legend>Issue</legend>
             <p>
-                <label for="html">HTML</label><input type="checkbox" checked="checked" id="html" name="html" value="html"> <label for="CSS">CSS</label><input type="checkbox" id="CSS" name="CSS" value="CSS"> <label for="JavaScript">JavaScript</label><input type="checkbox" id="html" name="JavaScript" value="JavaScript"> <label for="PHP">PHP</label><input type="checkbox" id="PHP" name="PHP" value="PHP"> <label for="MYSQL">MYSQL</label><input type="checkbox" id="MYSQL" name="MYSQL" value="MYSQL">
+                <label for="html">HTML</label><input type="checkbox" checked="checked" id="html" name="language" value="html"> <label for="CSS">CSS</label><input type="checkbox" id="CSS" name="language" value="CSS"> <label for="JavaScript">JavaScript</label><input type="checkbox" id="JavaScript" name="language" value="JavaScript"> <label for="PHP">PHP</label><input type="checkbox" id="PHP" name="language" value="PHP"> <label for="MYSQL">MYSQL</label><input type="checkbox" id="MYSQL" name="language" value="MYSQL">
             </p>
 
             <p>
